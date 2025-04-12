@@ -91,8 +91,9 @@ You configured Security Groups like this:
 - Private EC2 is hidden and protected.
 
 ---
-
+### In Git Bash
 ## 🔹 7. SSH into Public EC2
 
-```bash
+
 ssh -i your-key.pem ec2-user@<public-ec2-public-ip>
+scp -i your-key.pem private-ec2.pem ec2-user@<bastion-public-ip>:~
